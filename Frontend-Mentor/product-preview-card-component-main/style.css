@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:hsl(30, 38%, 92%) ;
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 200px;
+}
+.container-img{
+    display: flex;
+    height: 700px;
+}
+.container-img img {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.container-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: hsl(0, 0%, 100%);
+    width: 470px;
+    height: 700px;
+    border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding-left: 50px;
+}
+.container-content h2 {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: hsl(228, 12%, 48%);
+}
+.container-content h1{
+    font-size: 55px;
+    line-height: 50px;
+}
+.container-content p{
+    font-size: 25px;
+    color:hsl(228, 12%, 48%) ;
+    font-weight: 500;
+}
+.container-content div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container-content div h1{
+    color: hsl(158, 36%, 37%);
+}
+.container-content div h2 {
+    padding-right: 140px;
+    padding-top:10px ;
+    letter-spacing: 0 !important;
+    font-size: 25px !important;
+}
+.container-content button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 45px;
+    padding-top: 25px;
+    justify-content: space-evenly;
+    height: 65px;
+    width: 365px;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 15px;
+    border: none;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.container-content button div{
+    padding-left: 30px;
+}
+.container-content button div img {
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+}
+.container-content button span {
+    color: hsl(0, 0%, 100%) ;
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: 18px;
+    padding-right: 20px;
+}
+
+/* .container-content button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+
+} */
+
+.container-content button img {
+    width: 18px;
+}
