@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Bun</title>
+    <link rel="stylesheet" href="master.css">
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <main>
+        <div class="center">
+            <!-- Header -->
+            <header>
+                <div class="logo-container">
+                    <div class="logo">
+                        <img src="images/burger.png" alt="Burger Logo">
+                    </div>
+                    <h1>Burger Bun</h1>
+                </div>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#" class="home">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <div class="content">
+                <h1>Delight your Best.</h1>
+                <h2>Steak</h2>
+                <h2>Burger</h2>
+                <p>We are dedicated to the safety of our guests and employees and <br> have updated our safety measures.
+                    Lorem ipsum dolor sit amet <br> elit. Provident, fugit odio? Fugit ipsam. Sed ea ex. Nam mauris velit, <br>
+                    ac cursus quis, odio.</p>
+
+                <div class="buttons">
+                    <a href="#" class="yellow">See Menu</a>
+                    <a href="#" class="table">Book a table</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Categories Section -->
+    <section class="page2">
+        <div class="category">
+            <img src="images/burger.png" alt="Burger Icon">
+            <h1>Burgers</h1>
+            <p>Vivamus a ligula quam. Ut blandit <br> leo eu lorem. Duis sed dolor amet <br> ipsum primis in faucibus
+                orci dolor <br> sit amet.</p>
+            <div><a href="#">View all</a></div>
+        </div>
+
+        <div class="category">
+            <img src="images/snack.png" alt="Snack Icon">
+            <h1>Snacks</h1>
+            <p>Vivamus a ligula quam. Ut blandit <br> leo eu lorem. Duis sed dolor amet <br> ipsum primis in faucibus
+                orci dolor <br> sit amet.</p>
+            <div><a href="#">View all</a></div>
+        </div>
+
+        <div class="category">
+            <img src="images/beverage.png" alt="Drink Icon">
+            <h1>Beverages</h1>
+            <p>Vivamus a ligula quam. Ut blandit <br> leo eu lorem. Duis sed dolor amet <br> ipsum primis in faucibus
+                orci dolor <br> sit amet.</p>
+            <div><a href="#">View all</a></div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="page3">
+        <ul>
+            <li><a href="#">Natural ingredients</a></li>
+            <li><a href="#">Fresh vegetables & Meet</a></li>
+            <li><a href="#">World’s best Chef</a></li>
+            <li><a href="#">Best quality products</a></li>
+            <li><a href="#">Fastest door delivery</a></li>
+            <li><a href="#">Ground beef & Low fat</a></li>
+        </ul>
+
+        <div class="logo2">
+            <img src="images/burger1.png" alt="Burger Stack" class="logo23">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <div class="container">
+        <div class="contact">
+            <h1>Call us to order: <span class="stro">+1 123 456 789</span></h1>
+            <div class="buttons">
+                <a href="#" class="contact-us">Contact Us</a>
+                <a href="#" class="book">Book a table</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Burger Bun.All rights reserved | Design by <a href="https://github.com/mohamedabdelmasood624" style=" color: white; text-shadow: 100px;"> Mohamed Abdelmaqsoud</a></p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+    </script>
+
+</body>
+
+</html>
